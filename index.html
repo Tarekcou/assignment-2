@@ -11,7 +11,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
-  <body>
+  <main class="hero">
+    <section class="main">
     <nav class="navbar">
       <h1>Fitness</h1>
       <ul>
@@ -44,7 +45,7 @@
         <img src="images/images 2.png" alt="" />
 
         <div class="banner-card1">
-          <div></div>
+          <div><i class="fa-solid fa-circle-play"></i></div>
           <div>
             <h2>350+</h2>
             <p class="secondary-font">Video tutorial</p>
@@ -100,7 +101,7 @@
     </section>
 
     <section class="run">
-      <div>
+      <div class="run-content">
         <h1>Run an Extra <br />Mile Easily</h1>
         <p class="secondary-font">
           We believe fitness should be accessible to everyone, everywhere,
@@ -112,15 +113,15 @@
       <div><img src="images/run.jpg" alt="" /></div>
     </section>
 
-    <section>
-      <div>
+    <section class="excercise">
+      <div class="excercies-header">
         <h1>Trainings and Exercises</h1>
-        <p>
+        <p class="secondary-font">
           We believe fitness should be accessible to everyone, everywhere,
           regardless of income or access to a gym.
         </p>
       </div>
-      <div class="excercies">
+      <div class="excercise-list">
         <div class="excercise1">
           <img src="images/exercise1.jpg" alt="" />
           <h4>Knee Excercise</h4>
@@ -147,5 +148,150 @@
         </div>
       </div>
     </section>
-  </body>
+
+    <section class="bmi">
+      <h1 class="primary-font">BMI Calculator</h1>
+      <p class="secondary-font">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+     <div class="bmi-body">
+      <div class="bmi-chart">
+        <h2>BMI Calculator Chart</h2>
+        <table>
+          <tr>
+            <th>BMI</th>
+            <th>Weight Status</th>
+          </tr>
+          <tr class="secondary-font">
+            <td>Below 18.5</td>
+            <td>Underweight</td>
+
+          </tr>
+          <tr class="secondary-font">
+            <td>18.5 - 24.9</td>
+            
+            <td>Healthy</td>
+                      
+          </tr>
+          <tr class="secondary-font">
+            <td>25.0 - 29.0</td>
+            <td>OverWeight</td>
+          </tr>
+          <tr class="secondary-font">
+            <td>30.0 and Above</td>
+            <td>Obese</td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="bmi-calculator">
+        <div>
+             <h1 class="primary-font">Calculate your BMI</h1>
+             <p class="secondary-font">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+          <form class="form" action="submit">
+            <input placeholder="Height/cm" type="text">
+            <input placeholder="Weight/kg" type="text">
+            <input placeholder="Age" type="text">
+            <input class="sex-input" placeholder="Sex" type="text">
+            <input class="activity-input" placeholder="Select an activity factor" type="text">
+            <!-- <div class="sex"><i class="fa-solid fa-caret-down"></i></div>
+            
+            <div class="activity"><i class="fa-solid fa-caret-down"></i></div> -->
+          </form>
+           <button class="primary-button">Calculate</button>
+
+        </div>
+      </div>
+     </div>
+    </section>
+
+    <section class="meet">
+      
+        <div class="meet-header">
+          <h1>Meet Our Team</h1>
+          <p class="secondary-font">
+            We believe fitness should be accessible to everyone,
+             everywhere, regardless of income or access to a gym.
+          </p>
+        </div>
+        <div class="meet-list">
+          <div class="meet1">
+            <img src="images/trainer1.png" alt="" />
+            <h4>Jerome Bell</h4>
+            <h5>Trainer</h5>
+          </div>
+          <div class="meet2">
+            <img src="images/trainer2.png" alt="" />
+            <h4>Cameron Williamson</h4>
+              <h5>Trainer</h5>
+
+          </div>
+          <div class="meet3">
+            <img src="images/trainer3.png" alt="" />
+            <h4>Darrell Steward</h4>
+            <h5>Trainer</h5>
+
+          </div>
+          <div class="meet4">
+            <img src="images/trainer4.png" alt="" />
+            <h4>Dianne Russell</h4>
+            <h5>Trainer</h5>
+          </div>
+          <div class="meet5">
+            <img src="images/trainer5.png" alt="" />
+            <h4>Cody Fisher</h4>
+            <h5>Trainer</h5>
+          </div>
+          <div class="meet6">
+            <img src="images/trainer6.png" alt="" />
+            <h4>Theresa Webb</h4>
+            <h5>Trainer</h5>
+          </div>
+        </div>
+      
+    </section>
+
+
+    </section>
+
+
+    <footer>
+      <section class="footer">
+        <div class="footer-content">
+          <h1>Fitness</h1>
+          <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With
+            hundreds
+            of professional workouts.</p>
+        </div>
+        <div class="footer-link-table">
+          <table>
+            <tr>
+              <th>Get Started</th>
+              <th>Get Started</th>
+            </tr>
+            <tr>
+              <td>Service</td>
+              <td>Fitness</td>
+            </tr>
+            <tr>
+              <td>Contact us</td>
+              <td>Platform</td>
+            </tr>
+            <tr>
+              <td>Affilate Program</td>
+              <td>Workout Library</td>
+            </tr>
+            <tr>
+              <td>About Us</td>
+              <td>App Design</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <div class="all-right">All right reserved @Fitness 2024</div>
+    </footer>
+  </main>
+
+  
+ 
 </html>
