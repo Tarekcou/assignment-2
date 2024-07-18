@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+*{
+  color: var(--primary-text-color);
+  font-family: inter;
+  font-size: 1rem;
+  
+}
+body{
+    background-color: black;
+  width: 80%;
+  margin: 0 auto;
+}
+
+:root{
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: rgba(255, 255, 255, 0.843);
+  --special-text-color:  rgba(230, 83, 60, 1);
+}
+.secondary-font{
+  color: var(--secondary-text-color);
+  opacity: 50%;
+  font-size: 1rem;
+  font-weight: 300;
+
+}
+
+.primary-button{
+  background-color:  var(--special-text-color);
+  border-radius: 20px;
+  border: none;
+  padding: 10px 30px;
+
+}
+
+.navbar{
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: .001px solid rgba(255, 255, 255, 0.2);;
+  border-radius: 20px;
+  /* gap: 20px; */
+
+}
+.navbar li{
+  padding: 10px 30px;
+  list-style-type: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.navbar h1{
+  font-size: 2.2rem;
+  color: var(--special-text-color);
+    font-style: italic;
+}
+.fa-solid{
+display: none;
+  visibility: hidden;
+}
+
+/* banner content */
+
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 auto; */
+}
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+.banner-content-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.banner-content-button button{
+    padding: 10px 30px;
+}
+.banner-content-button button:nth-child(2) {
+  background: black;
+  border: 1px solid white;
+}
+.banner-content h1{
+  font-size: 4.8rem;
+  margin: 0;
+  padding: 0;
+}
+.banner-span{
+ font-family: 'Miama', sans-serif; 
+  font-size: 9rem;
+  font-weight: 400;
+}
+.banner-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+    margin-left: auto;
+    position: relative;
+  /* margin: 0 auto; */
+}
+.banner-image img{
+  margin-left: auto;
+  /* background-color: cadetblue; */
+}
+
+
+
+
+.banner-card2,.banner-card1{
+    width: 200px;
+      height: auto;
+      border-radius: 10px;
+      /* text-wrap: wrap; */
+      box-shadow: inset 0 0 2000px rgba(79, 73, 73, 0.5);
+    background-color: rgba(23, 22, 22, 0.4);
+    color: white;
+    font-weight: bold;
+    position:absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding: 0px 20px;
+    text-align: center;
+}
+.banner-card1 div:nth-child(1){
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--special-text-color);
+  border: none;
+
+}
+.banner-card1 div:nth-child(2)
+{
+  background: none;
+}
+.banner-card1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 0px 20px;
+  top: 85%;
+  left: 30%;
+}
+.banner-card2 h2,p{
+  background: none;
+  margin: 10px;
+}
+.banner-card1, h2{
+  font-size: 2rem;
+  background: none;
+    margin: 10px;
+}
+
+/* .banner-card2-content, h2,p{
+  background: none;
+} */
+
+
+/*habits start*/
+
+.habits{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.habits-content{
+  text-align: center;
+}
+
+.habits h1{
+  font-size: 3rem;
+  margin: 0 auto;
+}
+.habits p
+{
+  margin: 10px 0px;
+  font-size: .8rem;
+}
+.habit-list{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  /* flex-direction: row; */
+  
+}
+.habit-list img{
+  border-radius: 50%;
+}
+
+/*habits ends*/
+
+/*run starts */
+
+.run{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.run div{
+ flex: 1;
+ border-radius: 10px;
+
+}
+.run p{
+  padding: 0px;
+}
+.run button{
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+.run h1{
+  font-size: 3rem;
+}
+.run img{
+  flex: 1;
+  max-width: 100%;
+  object-fit:cover;
+  
+  
+}
+
+/* run ends*/
+
+
+/*Excercises */
+.excercies{
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 
+  "ex1 ex2 ex2 ex3"
+  "ex4 ex4 ex5 ex6";
+}
+.excercise1{
+  grid-area: ex1;
+  position: relative;
+
+}
+.excercise2 {
+  grid-area: ex2;
+    position: relative;
+}
+
+.excercise3 {
+  grid-area: ex3;
+    position: relative;
+}
+.excercise4 {
+  grid-area: ex4;
+    position: relative;
+}
+.excercise5 {
+  grid-area: ex5;
+    position: relative;
+}
+.excercise6 {
+  grid-area: ex6;
+    position: relative;
+}
+.excercies img{
+ max-width: 100%
+}
+.excercise1 h4{
+  position: absolute;
+  top: 70%;
+  transform: translate(180deg);
+}
+
+/*Excercises End*/

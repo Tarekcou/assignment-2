@@ -1,0 +1,60 @@
+@media screen and (max-width:576px) 
+  
+{
+  .primary-button {
+    padding: 5px 30px;
+    display: inline;
+  }
+    .navbar ul  li{
+      display: none;
+       visibility: hidden;
+
+    }
+    .fa-solid {
+      display: block;
+        visibility: visible;
+        
+    }
+    .banner{
+      flex-direction: column;
+    }
+.banner h1{
+  font-size: 2.2rem;
+}
+.banner-span{
+  font-size: 3rem;
+}
+.banner-card2
+{
+  top: 40%;
+    left: 75%;
+    width: 150px;
+}
+
+    .habit-list{
+      flex-direction: column;
+    }
+        .habits h1 {
+          font-size: 2.2rem;
+        }
+
+        .run{
+          flex-direction: column;
+        }
+
+        .run h1{
+          font-size: 2.2rem;
+        }
+        .run button{
+          margin-bottom: 10px;
+        }
+        .excercies{
+          grid-template-areas: 
+          "ex1"
+          "ex2"
+          "ex3"
+          "ex4"
+          "ex5"
+          "ex6";
+        }
+}
