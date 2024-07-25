@@ -1,9 +1,23 @@
 @media screen and (max-width:576px) 
   
 {
-  /* *{
-    width: 95%;
-  } */
+  *{
+    padding: 0px;
+      margin: 0px;
+  }
+   .main{
+    width: 90%;
+   }
+   .navbar{
+    width: 90%;
+   }
+   .body{
+    width: 90%;
+   }
+  .banner-div {
+        width: 90%;
+     }
+   
   .primary-button {
     padding: 10px 30px;
     display: inline;
@@ -18,20 +32,34 @@
         visibility: visible;
         
     }
-    .banner{
+    .banner-div{
+      margin: 30px auto;
       flex-direction: column;
     }
 .banner h1{
-  font-size: 2.2rem;
-}
-.banner-span{
   font-size: 3rem;
+    line-height: 4rem;
+}
+
+.banner-span{
+  font-size: 4rem;
 }
 .banner-card2
 {
   top: 40%;
     left: 75%;
-    width: 150px;
+    width: 120px;
+}
+.banner-card1{
+  width: 150px;
+}
+.banner-card1 h2,.banner-card2 h2 {
+  font-size: 1.5rem;
+  background: none;
+  margin: 10px;
+}
+.banner-card1 p,.banner-card2 p{
+  font-size: .6rem;
 }
 
     .habit-list{
@@ -69,18 +97,34 @@
           font-size: 2.2rem;
         }
 
-
-
+        .bmi{
+          margin: 0 auto;
+        }
+        .bmi-heading{
+          width: 90%;
+        }
+        .bmi-heading p{
+          text-align: left;
+        }
         .bmi-body {
                   display: flex;
                   flex-direction: column;
                   justify-content: space-between;
                   align-items: center;
-                  width: 100%;
+                  width: 90%;
                 }
+        .bmi-calculator h1{
+          font-size: 1.2rem;
+          margin: 10px 0;
+        }
+        .bmi-chart h2{
+          font-size: 1.2rem;
+            margin: 10px 0;
+        }
         .meet-header h1{
            font-size: 2.2rem;
         }
+
        .meet-list {
          margin: 20px 0px;
          align-items: center;

@@ -14,16 +14,20 @@
   font-family: inter;
   font-size: 1rem;
       /* background-image: linear-gradient(top to bottom, rgb(19, 19, 19), black); */
-        padding: 0;
-        margin: 10px 0;
+        padding: 0px;
+        margin: 0px;
   
 }
 .hero{
     background: linear-gradient(to left top, rgb(27, 26, 26), rgb(0, 0, 0));
+   
+
 }
 .main{
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 0px auto;
+  padding: 30px 0px;
+  position: relative;
 }
 
 :root{
@@ -53,7 +57,8 @@
 }
 
 .navbar{
-  /* width: 80%; */
+  width: 75%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,17 +90,27 @@ display: none;
 }
 
 /* banner content */
-
 .banner{
+    /* box-shadow: inset 0 0 2000px rgba(79, 73, 73, 0.5); */
+    background-image: linear-gradient(rgba(74, 68, 68, 0.5),
+          rgba(0, 0, 0, 0.5));
+      
+    padding: 10px 0px;
+}
+.banner-div{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 75%;
+    margin: 0px auto;
+
+    /* box-shadow: inset 0 0 2000px rgba(79, 73, 73, 0.5); */
   /* margin: 0 auto; */
 }
 .banner-content{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   flex: 1;
 }
 .banner-content-button{
@@ -115,6 +130,7 @@ display: none;
   font-size: 4.8rem;
   margin: 0;
   padding: 0;
+  line-height: 6.5rem;
 }
 .banner-content p{
   text-align: left;
@@ -152,8 +168,8 @@ display: none;
     color: white;
     font-weight: bold;
     position:absolute;
-    top: 50%;
-    left: 75%;
+    top: 30%;
+    left: 100%;
     transform: translate(-50%, -50%);
     padding: 0px 20px;
     text-align: center;
@@ -184,8 +200,9 @@ display: none;
 .banner-card2 h2,p{
   background: none;
   margin: 10px;
+    font-size: 2rem;
 }
-.banner-card1, h2{
+.banner-card1 h2{
   font-size: 2rem;
   background: none;
     margin: 10px;
@@ -203,7 +220,7 @@ display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 10px auto;
 }
 .habits-content{
   text-align: center;
@@ -283,7 +300,7 @@ display: none;
 
 /*Excercises */
 .excercise{
-  /* border: 1px solid red; */
+  margin: 50px 0px;
 }
 .excercise-list{
   margin: 20px 0px;
@@ -389,25 +406,42 @@ display: none;
 
 /*Excercises End*/
 
+
+
 /*BMI calculator */
 .bmi{
+      
+      margin: 0px auto;
+      padding: 0px 0;
+      
+       
+ 
 }
-.bmi h1,p{
-  margin: 30px auto;
-  text-align: center;
+.bmi-background{
+      box-shadow: inset 0 0 2000px rgba(79, 73, 73, 0.5);
+}
+
+.bmi-heading{
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .bmi-body{
+  width: 75%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  
+  margin: 10px auto;
+  padding: 15px 0px;
 }
 .bmi-chart{
     width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   flex: 1;
 }
@@ -464,9 +498,19 @@ color:rgba(232, 224, 224, 0.8);
 }
 /* BMI calculator End */
 
+
+/*BODY START */
+.body {
+
+  width: 75%;
+  margin: 20px auto;
+  padding: 0px 0px;
+  position: relative;
+  /* border: 1px solid red; */
+}
 /*meet Start*/
 .meet-list {
-  margin: 20px 0px;
+  margin: 40px 0px;
   display: grid;
   gap: 10px;
   /* width: calc(100%-30px); */
@@ -556,7 +600,7 @@ footer{
    box-shadow: inset 0 0 2000px rgba(79, 73, 73, 0.5);
 }
 .footer{
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -585,6 +629,8 @@ footer{
 .footer-link-table table{
   width: 100%;
   text-align: center;
+  border-spacing: 1.5rem;
+  
  
 }
 
@@ -601,7 +647,7 @@ footer{
 
 .all-right{
   width: 80%;
-  margin: 10px auto;
+  margin: 0px auto;
   border-top: .1px solid var(--secondary-text-color);
   color: var(--secondary-text-color);
   text-align: center;
