@@ -26,7 +26,6 @@
 .main{
   width: 75%;
   margin: 0px auto;
-  padding: 30px 0px;
   position: relative;
 }
 
@@ -44,7 +43,7 @@
   color: var(--secondary-text-color);
   font-size: 1rem;
   margin: 15px 0px;
-  /* text-align: center; */
+  text-align: left;
 
 }
 
@@ -58,7 +57,6 @@
 
 .navbar{
   width: 75%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,8 +77,8 @@
     font-size: 1.1rem;
     font-weight: 400;
 }
-.navbar h1{
-  font-size: 2.2rem;
+.navbar-logo-text{
+  font-size: 2.5rem;
   color: var(--special-text-color);
     font-style: italic;
 }
@@ -95,14 +93,15 @@ display: none;
     background-image: linear-gradient(rgba(74, 68, 68, 0.5),
           rgba(0, 0, 0, 0.5));
       
-    padding: 10px 0px;
+    padding: 50px 0px;
+    
 }
 .banner-div{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 75%;
-    margin: 0px auto;
+    margin: 30px auto;
 
     /* box-shadow: inset 0 0 2000px rgba(79, 73, 73, 0.5); */
   /* margin: 0 auto; */
@@ -120,14 +119,14 @@ display: none;
   gap: 20px;
 }
 .banner-content-button button{
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
 .banner-content-button button:nth-child(2) {
   background: black;
   border: 1px solid white;
 }
 .banner-content h1{
-  font-size: 4.8rem;
+  font-size: 5rem;
   margin: 0;
   padding: 0;
   line-height: 6.5rem;
@@ -148,10 +147,14 @@ display: none;
   flex: 1;
     margin-left: auto;
     position: relative;
+    
   /* margin: 0 auto; */
 }
 .banner-image img{
   margin-left: auto;
+  max-width: 100%;
+  max-height: 100%;
+
   /* background-color: cadetblue; */
 }
 
@@ -174,9 +177,10 @@ display: none;
     padding: 0px 20px;
     text-align: center;
 }
+
 .banner-card1 div:nth-child(1){
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--special-text-color);
   border: none;
@@ -195,7 +199,7 @@ display: none;
   align-items: center;
   height: 0px 20px;
   top: 85%;
-  left: 30%;
+  left: 40%;
 }
 .banner-card2 h2,p{
   background: none;
@@ -206,6 +210,9 @@ display: none;
   font-size: 2rem;
   background: none;
     margin: 10px;
+}
+.banner-card1 p{
+  margin: 10px;
 }
 
 /* .banner-card2-content, h2,p{
@@ -220,13 +227,14 @@ display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  padding-bottom: 30px;
 }
 .habits-content{
   text-align: center;
 }
 .habits-content p{
   margin: 20px auto;
+  text-align: center;
 }
 
 .habits h1{
@@ -235,23 +243,32 @@ display: none;
 }
 
 .habit-list{
-  display: flex;
-  justify-content: center;
-  text-align: center;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
   /* flex-direction: row; */
   
+}
+.habit-list p{
+  text-align: center;
 }
 .habit1,.habit2,.habit3,.habit4{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;    
 }
 .habit-list img{
   border-radius: 50%;
+  max-width: 100%;
+  height: 100%;
+  
+}
+.habit-list h3{
+  margin-top: 10px;
 }
 .habit-list p{
-  width: 80%;
+  width: 60%;
 }
 
 /*habits ends*/
@@ -266,33 +283,42 @@ display: none;
   box-shadow: inset 0 0 1000px rgba(116, 104, 104, 0.5);
   padding: 30px;
   border-radius: 10px;
-  margin: 20px 0px;
+  /* margin: 20px 0px; */
 }
 .run-content{
   align-items: start;
+  flex: 1;
 }
-.run div{
- flex: 1;
- border-radius: 10px;
 
-}
 .run p{
   text-align: start;
   width: 80%;
 }
 .run button{
-  padding: 10px 30px;
-  margin-top: 10px;
+  padding: 15px 30px;
+  margin: 10px 0px;
+  width: 40%;
 }
 .run h1{
   font-size: 3rem;
 }
 .run img{
+  /* flex: 1; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 0%;
+  overflow: hidden;
+  border-radius: 18px;
+
+    
+}
+.run-image-container{
+  width: 100%;
+    height: 100%;
   flex: 1;
-  max-width: 100%;
-  object-fit:cover;
-  
-  
+  display: flex;
+  justify-content: center;
 }
 
 /* run ends*/
@@ -301,6 +327,10 @@ display: none;
 /*Excercises */
 .excercise{
   margin: 50px 0px;
+}
+.excercise h4{
+  font-weight: 400;
+  font-size: .8rem;
 }
 .excercise-list{
   margin: 20px 0px;
@@ -346,9 +376,16 @@ display: none;
 .excercise-list img{
  max-width: 100%;
  height: 100%;
-    background-color: white;
-    filter: saturate(207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-    }
+  background-blend-mode: saturation;
+  object-fit: cover;
+   /* background-color: rgba(6, 255, 210, 50%); */
+   /* filter: saturate(1%); */
+    /* filter: grayscale(10); */
+/* border: 1px solid red; */
+  /* fill: rgba(6, 255, 210, 50%); */
+    /* filter: saturate(207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
+    /* box-shadow: 10px 10px 20px rgba(6, 255, 210, 50%); */
+}
 /* box-shadow: 10px 10px 20px rgb(246, 69, 69); */
 
 
@@ -438,18 +475,28 @@ display: none;
   padding: 15px 0px;
 }
 .bmi-chart{
-    width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   flex: 1;
 }
+.bmi-chart table{
+    border-collapse: collapse;
+}
 .bmi-chart th,.bmi-chart td{
   border: 1px solid var(--secondary-text-color);
-  border-collapse: collapse;
   padding: 15px 25px;
+
 }
+.bmi-chart td {
+  border: 1px solid var(--secondary-text-color);
+  color: var(--secondary-text-color);
+  padding: 15px 25px;
+
+}
+
 
 .bmi-calculator{
   flex: 1;
@@ -461,33 +508,62 @@ display: none;
   margin: 0px auto;
 
 }
-.bmi-calculator h1{
+.bmi-calculator h1,.bmi-chart h2{
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 .form{
-  display: flex;
+  display: grid;
   gap: 20px;
-  flex-wrap: wrap ;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
   margin: 20px 0px;
 }
-.form input{
-padding: 15px 25px;
-flex-grow: 1;
-width: 25%;
-border-radius: 10px;
-background: rgb(44, 41, 41);
-color:rgba(232, 224, 224, 0.8);
+.activity{
+  grid-column:1/-1;
+}
+.sex,
+.activity,.height,.weight,.age {
+  height: 60px;
+  /* position: relative; */
+    background: rgb(44, 41, 41);
+   border-radius: 10px;
+    /* padding: 5px; */
+    position: relative;
+}
+.height-input,
+.weight-input,
+.age-input,.sex-input,.activity-input{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: none;
+  position: relative;
+}
+.form div{
+  
+}
+.form i{
+  position: absolute;
+
+  right: 50px;
+    top: 45%;
+    width: 100%;
+    /* border: 5px solid red; */
+}
+.bmi-btn{
+  padding: 15px 50px;
+  width: auto;
+  text-align: center;
 }
 
-.sex,
-.activity {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .sex-input,
 .activity-input {
+  background-image: url("");
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
 }
 
 .sex i,
@@ -524,6 +600,9 @@ color:rgba(232, 224, 224, 0.8);
   text-align: center;
 
 }
+.meet-header p{
+  text-align: center;
+}
 
 .meet1 {
   grid-area: meet1;
@@ -555,12 +634,17 @@ color:rgba(232, 224, 224, 0.8);
   grid-area: meet6;
   position: relative;
 }
-
-.meet-list img {
-  width:100%;
+.meet-list div{
+  width: 100%;
   height: 100%;
-  border: 5px solid rgb(50, 49, 49);
-  border-radius: 10px;
+}
+.meet-list img {
+  width:95%;
+  height: 95%;
+  border: 15px solid rgb(50, 49, 49);
+  border-radius: 20px;
+  object-fit: cover;
+  
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)); */
   /* box-shadow: 10px 10px 20px rgb(108, 104, 104); */
@@ -618,24 +702,28 @@ footer{
   color: var(--special-text-color);
   font-size: 2.5rem;
   font-style: italic;
+  text-align: start;
 }
 .footer-content p{
   color: var(--secondary-text-color);
+  width: 80%;
 }
 .footer-link-table{
   flex: 1;
+  width: 100%;
+    display: flex;
+    
 
 }
 .footer-link-table table{
   width: 100%;
-  text-align: center;
+  text-align: left;
   border-spacing: 1.5rem;
   
  
 }
 
 .footer-link-table th ,td{
-  border: none;
   border-collapse: collapse;
 }
 .footer-link-table th{
@@ -646,12 +734,27 @@ footer{
 }
 
 .all-right{
-  width: 80%;
+  width: 75%;
   margin: 0px auto;
   border-top: .1px solid var(--secondary-text-color);
   color: var(--secondary-text-color);
   text-align: center;
-  padding: 15px 0px;
+  padding: 25px 0px;
 }
 
 /* foot ends*/
+
+.chatBot-parent{
+  position: relative;
+}
+.chatBot-parent img{
+  position: fixed;
+  bottom: 10%;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+    border: 1px solid red;
+    border-radius: 50%;
+
+  background:var(--special-text-color);
+}

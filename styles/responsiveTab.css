@@ -1,0 +1,211 @@
+@media screen and (min-width:577px) and (max-width:992.1px) {
+  
+  * {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    .main {
+      width: 85%;
+    }
+  
+    .navbar {
+      width: 85%;
+    }
+    
+  
+    .body {
+      width: 85%;
+    }
+  
+    .banner-div {
+      width: 85%;
+    }
+  
+    .primary-button {
+      padding: 10px 30px;
+      display: inline;
+    }
+  
+    .navbar ul li {
+    padding: 10px 20px;
+      font-size: .8rem;
+  
+    }
+         .navbar-logo-text {
+           font-size: 2.2rem;
+           color: var(--special-text-color);
+           font-style: italic;
+         }
+                 .navbar li {
+                   padding: 8px 20px;
+                   list-style-type: none;
+                   font-size: .8rem;
+                   font-weight: 400;
+                 }
+  
+    /* .fa-solid {
+      display: block;
+      visibility: visible;
+  
+    } */
+  
+    .banner-div {
+      margin: 35px auto;
+      flex-direction: column;
+      
+    }
+    .banner-content h1{
+      font-size: 4rem;
+    }
+    .banner-image{
+      margin: 0 auto;
+    }
+  
+      .banner-content-button button {
+               padding: 12px 25px;
+    }
+  
+    .banner-span {
+      font-size: 7rem;
+    }
+  
+    .banner-card2 {
+      top: 40%;
+      left: 90%;
+      width: 50%;
+    }
+  
+    .banner-card1 {
+      width: 50%;
+      left: 0%;
+    }
+  
+    .banner-card1 h2,
+    .banner-card2 h2 {
+      font-size: 2.2rem;
+      background: none;
+      margin: 20px;
+    }
+  
+    .banner-card1 p,
+    .banner-card2 p {
+      font-size: 1rem;
+
+    }
+  
+    .habit-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      grid-auto-flow: row;
+    }
+     
+    .habit1{
+    }
+  
+    .habits h1 {
+      font-size: 2.5rem;
+    }
+  
+    .run {
+      /* flex-direction: column; */
+    }
+  
+    .run h1 {
+      font-size: 2.5rem;
+    }
+  
+    .run button {
+      margin-bottom: 10px;
+        padding: 12px 25px;
+         width: 60%;
+    }
+        
+  
+    /* .excercies {
+      grid-template-areas:
+        "ex1 ex4"
+        "ex4 ex5";
+    }
+  
+    .excercise3 {
+      display: none;
+      visibility: hidden;
+  
+    }
+  
+    .excercise6 {
+      display: none;
+      visibility: hidden;
+    }
+   */
+    .excercies-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .bmi {
+      margin: 0 auto;
+    }
+  
+    .bmi-heading {
+      width: 85%;
+    }
+  
+    .bmi-heading p {
+      text-align: left;
+    }
+  
+    .bmi-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+    }
+  
+    .bmi-calculator h1 {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+  
+  .bmi-chart table{
+    width: 100%;
+    text-align: center;
+  }
+    .bmi-chart h2{
+      font-size: 1.5rem;
+    }
+    .b
+    .bmi-chart h2 {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+  
+    .meet-header h1 {
+      font-size: 2rem;
+    }
+  
+    .meet-list {
+      margin: 20px 0px;
+      align-items: center;
+      display: grid;
+      
+      gap: 10px;
+      grid-template-areas:
+        "meet1 meet2 meet3"
+        "meet4 meet5 meet6";
+    }
+    .meet-list div{
+      width: 100%;
+      height: 100%;
+    }
+     
+          
+  
+    .footer {
+      flex-direction: column;
+    }
+        
+}
