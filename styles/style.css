@@ -72,19 +72,25 @@
 
 }
 .navbar li{
-  padding: 10px 30px;
+  padding: 8px 30px;
   list-style-type: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
+    cursor: pointer;
 }
 .navbar-logo-text{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: var(--special-text-color);
     font-style: italic;
+    cursor: pointer;
+    
 }
-.fa-solid{
+.navbar img{
+  width: 20px;
+  height: 25px;
 display: none;
   visibility: hidden;
+  cursor: pointer;
 }
 
 /* banner content */
@@ -117,9 +123,11 @@ display: none;
   align-items: center;
   justify-content: start;
   gap: 20px;
+      cursor: pointer;
 }
 .banner-content-button button{
-    padding: 15px 30px;
+    padding: 10px 30px;
+        cursor: pointer;
 }
 .banner-content-button button:nth-child(2) {
   background: black;
@@ -187,7 +195,15 @@ display: none;
   align-items: center;
   display: flex;
   justify-content: center;
+    cursor: pointer;
+    color: white;
+  
 
+}
+.banner-card1 img{
+  width: 12px;
+  height: 15px;
+  margin: 0 auto;
 }
 .banner-card1 div:nth-child(2)
 {
@@ -295,9 +311,10 @@ display: none;
   width: 80%;
 }
 .run button{
-  padding: 15px 30px;
+  padding: 10px 30px;
   margin: 10px 0px;
   width: 40%;
+  cursor: pointer;
 }
 .run h1{
   font-size: 3rem;
@@ -350,8 +367,25 @@ display: none;
 .excercise1{
   grid-area: ex1;
   position: relative;
+  display: flex;
 
 }
+.excercise1 div,.excercise2 div,.excercise3 div,.excercise4 div,.excercise5 div, .excercise6 div{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  
+}
+.excercise1 div{background: #06FFD2;}
+.excercise2 div{background: #FF0000;}
+.excercise3 div{background: #000000;}
+.excercise4 div{background: #000000;}
+.excercise5 div{background: #42FF00; opacity: .3;}
+.excercise6 div{background: #0047FF;opacity: .3;}
+
 .excercise2 {
   grid-area: ex2;
     position: relative;
@@ -474,6 +508,9 @@ display: none;
   margin: 10px auto;
   padding: 15px 0px;
 }
+.bmi h2{
+  font-size: 1.5rem;
+}
 .bmi-chart{
   width: 100%;
   display: flex;
@@ -488,6 +525,7 @@ display: none;
 .bmi-chart th,.bmi-chart td{
   border: 1px solid var(--secondary-text-color);
   padding: 15px 25px;
+    text-align: center;
 
 }
 .bmi-chart td {
@@ -508,10 +546,10 @@ display: none;
   margin: 0px auto;
 
 }
-.bmi-calculator h1,.bmi-chart h2{
+/* .bmi-calculator h1{
   font-size: 2rem;
   margin-bottom: 10px;
-}
+} */
 .form{
   display: grid;
   gap: 20px;
@@ -524,12 +562,13 @@ display: none;
 }
 .sex,
 .activity,.height,.weight,.age {
-  height: 60px;
+  height: 45px;
   /* position: relative; */
     background: rgb(44, 41, 41);
    border-radius: 10px;
     /* padding: 5px; */
     position: relative;
+    text-align: center;
 }
 .height-input,
 .weight-input,
@@ -538,40 +577,36 @@ display: none;
   height: 100%;
   border-radius: 10px;
   background: none;
-  position: relative;
+  padding-left: 5px;
 }
-.form div{
-  
-}
-.form i{
+.sex img,
+.activity img{
+ 
   position: absolute;
-
-  right: 50px;
-    top: 45%;
-    width: 100%;
-    /* border: 5px solid red; */
+  right: 5%;
+  top: 40%;
+  width: 10px;
+  height: 10px;
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 255, 255));
 }
+.activity img{
+  right: 3%;
+}
+
+
+
 .bmi-btn{
-  padding: 15px 50px;
+  padding: 10px 50px;
   width: auto;
   text-align: center;
+  cursor: pointer;
 }
 
 
 
-.sex-input,
-.activity-input {
-  background-image: url("");
-    background-repeat: no-repeat;
-    background-position: 2px 3px;
-}
 
-.sex i,
-.activity i {
-  position: absolute;
-  left: 0;
-  
-}
+
+
 /* BMI calculator End */
 
 
@@ -639,14 +674,16 @@ display: none;
   height: 100%;
 }
 .meet-list img {
-  width:95%;
+  width:100%;
   height: 95%;
   border: 15px solid rgb(50, 49, 49);
   border-radius: 20px;
   object-fit: cover;
+  /* background: linear-gradient(); */
   
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)); */
+  
+  background: linear-gradient(rgba(169, 39, 39, 0.5),
+        #3d22c480);
   /* box-shadow: 10px 10px 20px rgb(108, 104, 104); */
   /* filter: blur(2px); */
     /* background-color: rgba(0, 0, 0, 0.4); */
@@ -655,6 +692,15 @@ display: none;
   
   /* filter: saturate(207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
 }
+/* .meet-list:nth-child(1){
+  display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
 
 .meet h4 {
 
@@ -700,9 +746,10 @@ footer{
 }
 .footer-content h1{
   color: var(--special-text-color);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-style: italic;
   text-align: start;
+    cursor: pointer;
 }
 .footer-content p{
   color: var(--secondary-text-color);
@@ -731,6 +778,7 @@ footer{
 }
 .footer-link-table td{
   color: var(--secondary-text-color);
+    cursor: pointer;
 }
 
 .all-right{
@@ -751,10 +799,21 @@ footer{
   position: fixed;
   bottom: 10%;
   right: 40px;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
     border: 1px solid red;
     border-radius: 50%;
 
   background:var(--special-text-color);
 }
+
+
+
+
+h3 {
+  text-align: center;
+}
+
+
+
+
