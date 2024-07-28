@@ -370,7 +370,9 @@ display: none;
   text-align: left;
 }
 
-.excercise1 div,.excercise2 div,.excercise3 div,.excercise4 div,.excercise5 div, .excercise6 div{
+.excercise1 div,.excercise2 div,
+.excercise3 div,.excercise4 div,
+.excercise5 div, .excercise6 div{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -416,7 +418,7 @@ display: none;
 }
 .excercise-list img{
  max-width: 100%;
- height: 100%;
+ max-height: 100%;
   background-blend-mode: saturation;
   object-fit: cover;
    /* background-color: rgba(6, 255, 210, 50%); */
@@ -491,7 +493,6 @@ display: none;
       
       margin: 50px auto;
       padding: 0px 0;
-      border: 1px solid blue;
        
  
 }
@@ -831,7 +832,6 @@ footer{
     /* background: red; */
   /* margin-bottom: 50px; */
   padding: 40px 0px;
-  border: 1px solid red;
   
 }
 
