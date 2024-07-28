@@ -204,7 +204,10 @@ display: none;
   width: 20px;
   height: 20px;
   margin: 0 auto;
-  background: white;
+  border-radius: 50%;
+  
+  
+
 }
 .banner-card1 div:nth-child(2)
 {
@@ -345,7 +348,6 @@ display: none;
 /*Excercises */
 .excercise{
   margin-top: 30px;
-  border: 1px solid red;
 }
 .excercise h4{
   font-weight: 400;
@@ -810,8 +812,7 @@ footer{
 /*Honeycomb Design*/
 
 .Diet-plan{
-  border: 1px solid red;
-  background: red;
+ 
 }
 .honeycomb {
   display: -webkit-box;
@@ -835,7 +836,7 @@ footer{
   flex: 0 1 160px;
   max-width: 160px;
   height: 80px;
-  margin: 65.4px 12.5px 25px;
+  margin: 30px 12px 25px;
   position: relative;
   padding: 0.5em;
   text-align: center;
@@ -870,7 +871,7 @@ footer{
 
 .honeycomb-cell_title>small {
   font-weight: 300;
-  margin-top: 0.25em;
+  margin-top: 0.25rem;
 }
 
 .honeycomb-cell::before,
@@ -927,60 +928,4 @@ footer{
   margin: 0 12.5px;
 }
 
-/****** Responsive *******/
-/* 
-@media (max-width: 550px) {
-  .honeycomb-cell {
-    margin: 81.25px 25px;
-  }
-}
 
-
-@media (min-width: 550px) and (max-width: 825px) {
-  .honeycomb-cell:nth-child(3n) {
-    margin-right: calc(50% - 125px);
-    margin-left: calc(50% - 125px);
-  }
-
-  .honeycomb_Hidden:nth-child(3n + 5) {
-    display: block;
-  }
-}
-
-
-@media (min-width: 825px) and (max-width: 1100px) {
-
-  .honeycomb-cell:nth-child(5n + 4) {
-    margin-left: calc(50% - 275px);
-  }
-
-  .honeycomb-cell:nth-child(5n + 5) {
-    margin-right: calc(50% - 275px);
-  }
-
-  .honeycomb_Hidden:nth-child(5n),
-  .honeycomb_Hidden:nth-child(5n + 3) {
-    display: block;
-  }
-}
-
-@media (min-width: 1100px) {
-  .honeycomb-cell:nth-child(7n + 5) {
-    margin-left: calc(50% - 400px);
-  }
-
-  .honeycomb-cell:nth-child(7n + 7),
-  .honeycomb-cell:nth-child(7n + 5):nth-last-child(2) {
-    margin-right: calc(50% - 400px);
-  }
-
-  .honeycomb_Hidden:nth-child(7n + 7),
-  .honeycomb_Hidden:nth-child(7n + 9),
-  .honeycomb_Hidden:nth-child(7n + 11) {
-    display: block;
-  }
-}
-
-
-
- */

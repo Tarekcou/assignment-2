@@ -208,4 +208,27 @@
       flex-direction: column;
     }
         
+
+             .honeycomb {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               /* gap: 20px; */
+               transform: translateY(10px);
+             }
+      
+             .honeycomb-cell {
+               width: 140px;
+               height: 70px;
+               flex: 1;
+               margin: 50px 0px 50px;
+             }
+      
+             .honeycomb-cell:nth-child(7) {
+               display: none;
+               visibility: hidden;
+             }
+      
+             .honeycomb-cell_title {
+               font-size: 1.2rem;
+             }
 }
