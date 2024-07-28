@@ -72,6 +72,10 @@
   width: 40%;
   left: 15%;
 }
+.banner-card1 img {
+  width: 30px;
+  height: 30px;
+}
 .banner-card1 h2,.banner-card2 h2 {
   font-size: 1.5rem;
   background: none;
