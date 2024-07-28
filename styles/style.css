@@ -364,12 +364,7 @@ display: none;
 .excercies-header p{
   text-align: left;
 }
-.excercise1{
-  grid-area: ex1;
-  position: relative;
-  display: flex;
 
-}
 .excercise1 div,.excercise2 div,.excercise3 div,.excercise4 div,.excercise5 div, .excercise6 div{
   width: 100%;
   height: 100%;
@@ -380,11 +375,18 @@ display: none;
   
 }
 .excercise1 div{background: #06FFD2;}
-.excercise2 div{background: #FF0000;}
+.excercise2 div{background: #FF0000;opacity: .3;}
 .excercise3 div{background: #000000;}
 .excercise4 div{background: #000000;}
 .excercise5 div{background: #42FF00; opacity: .3;}
 .excercise6 div{background: #0047FF;opacity: .3;}
+
+.excercise1 {
+  grid-area: ex1;
+  position: relative;
+  
+
+}
 
 .excercise2 {
   grid-area: ex2;
@@ -642,32 +644,44 @@ display: none;
 .meet1 {
   grid-area: meet1;
   position: relative;
+  background: #000000;
+  opacity: .8;
 
 }
 
 .meet2 {
   grid-area: meet2;
   position: relative;
+  background: #000000;
+    opacity: .8;
 }
 
 .meet3 {
   grid-area: meet3;
   position: relative;
+  background: #000000;
+    opacity: .8;
 }
 
 .meet4 {
   grid-area: meet4;
   position: relative;
+  background: #000000;
+    opacity: .8;
 }
 
 .meet5 {
   grid-area: meet5;
   position: relative;
+  background: #000000;
+    opacity: .8;
 }
 
 .meet6 {
   grid-area: meet6;
   position: relative;
+  background: #000000;
+    opacity: .8;
 }
 .meet-list div{
   width: 100%;
