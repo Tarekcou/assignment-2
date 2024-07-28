@@ -489,9 +489,9 @@ display: none;
 /*BMI calculator */
 .bmi{
       
-      margin: 0px auto;
+      margin: 50px auto;
       padding: 0px 0;
-      
+      border: 1px solid blue;
        
  
 }
@@ -813,7 +813,8 @@ footer{
 /*Honeycomb Design*/
 
 .Diet-plan{
- 
+  margin: 0 auto;
+  
 }
 .honeycomb {
   display: -webkit-box;
@@ -828,7 +829,9 @@ footer{
   padding: 0;
   transform: translateY(50px);
     /* background: red; */
-  margin-bottom: 100px;
+  /* margin-bottom: 50px; */
+  padding: 40px 0px;
+  border: 1px solid red;
   
 }
 
@@ -843,6 +846,7 @@ footer{
   text-align: center;
   z-index: 1;
   box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+  
 }
 
 .honeycomb-cell_img {
