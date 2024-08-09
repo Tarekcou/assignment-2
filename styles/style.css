@@ -324,23 +324,26 @@ display: none;
 .run h1{
   font-size: 3rem;
 }
-.run img{
-  /* flex: 1; */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 100% 0%;
-  overflow: hidden;
-  border-radius: 18px;
 
-    
-}
+
+
 .run-image-container{
-  width: 100%;
-    height: 100%;
+  
   flex: 1;
   display: flex;
   justify-content: center;
+  max-width: 500px;
+    max-height: 450px;
+    border-radius: 18px;
+   
+}
+.run-image-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: none;
+    object-position: 66% 28%;
+    /* Scale: 1.33 */
 }
 
 /* run ends*/
@@ -408,10 +411,14 @@ display: none;
   grid-area: ex4;
     position: relative;
 }
+.excercise4 img {
+  height: 100%;
+}
 .excercise5 {
   grid-area: ex5;
     position: relative;
 }
+
 .excercise6 {
   grid-area: ex6;
     position: relative;
@@ -421,6 +428,7 @@ display: none;
  max-height: 100%;
   background-blend-mode: saturation;
   object-fit: cover;
+
    /* background-color: rgba(6, 255, 210, 50%); */
    /* filter: saturate(1%); */
     /* filter: grayscale(10); */
@@ -503,7 +511,7 @@ display: none;
 .bmi-heading{
   text-align: left;
   width: 50%;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .bmi-body{
@@ -518,6 +526,7 @@ display: none;
 }
 .bmi h2{
   font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 .bmi-chart{
   width: 100%;
@@ -832,6 +841,7 @@ footer{
     /* background: red; */
   /* margin-bottom: 50px; */
   padding: 40px 0px;
+
   
 }
 

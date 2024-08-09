@@ -62,6 +62,8 @@
 .banner-span{
   font-size: 5rem;
 }
+
+
 .banner-card2
 {
   top: 40%;
@@ -114,6 +116,12 @@
                   padding: 10px 25px;
                     font-size: .8rem;
                 }
+               
+                .run-image-container img {
+                  object-fit: cover;
+                  /* object-position: 86% 45%; */
+                  /* Scale: 1.33 */
+                }
     
         .excercies{
           grid-template-areas: 
@@ -122,7 +130,7 @@
         }
         .excercise3{
           display: none;
-            visibility: hidden;
+          visibility: hidden;
 
         }
         .excercise6{
@@ -212,10 +220,11 @@
 
        .honeycomb{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         /* gap: 20px; */
           padding: 0px 0px;
         transform: translateY(0px);
+        justify-content: center;
        }
        .honeycomb-cell{
         width: 100px;
