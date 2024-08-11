@@ -162,7 +162,14 @@
     .excercies-header h1 {
       font-size: 2.5rem;
     }
-  
+    .excercise1,
+    .excercise2,
+    .excercise3,
+    .excercise4,
+    .excercise5,
+    .excercise6 {
+      height: 180px;
+    }
     .bmi {
       margin: 0 auto;
     }

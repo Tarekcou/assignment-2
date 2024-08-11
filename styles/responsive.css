@@ -126,7 +126,15 @@
           "ex1 ex2 ex2"
           "ex4 ex4 ex5";
         }
-         
+            .excercise1,
+            .excercise2,
+            .excercise3,
+            .excercise4,
+            .excercise5,
+            .excercise6 {
+              height: 150px;
+             
+            }
         .excercise3{
           display: none;
           visibility: hidden;
