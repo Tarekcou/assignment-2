@@ -116,7 +116,9 @@
                   padding: 10px 25px;
                     font-size: .8rem;
                 }
-               
+                    .run-image-container img {
+                      object-fit: cover;
+                    }
                 
     
         .excercies{
@@ -124,9 +126,7 @@
           "ex1 ex2 ex2"
           "ex4 ex4 ex5";
         }
-          .excercise4 img {
-             height: 100%;
-            }
+         
         .excercise3{
           display: none;
           visibility: hidden;
