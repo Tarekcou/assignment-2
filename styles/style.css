@@ -373,7 +373,7 @@ display: none;
   text-align: left;
 }
 .excercise1,.excercise2,.excercise3,.excercise4,.excercise5,.excercise6{
-  height: 200px;
+  max-height: 220px;
 }
 .excercise1 div,.excercise2 div,
 .excercise3 div,.excercise4 div,
