@@ -117,17 +117,16 @@
                     font-size: .8rem;
                 }
                
-                .run-image-container img {
-                  object-fit: cover;
-                  /* object-position: 86% 45%; */
-                  /* Scale: 1.33 */
-                }
+                
     
         .excercies{
           grid-template-areas: 
-          "ex1 ex4"
-          "ex4 ex5";
+          "ex1 ex2 ex2"
+          "ex4 ex4 ex5";
         }
+          .excercise4 img {
+             height: 100%;
+            }
         .excercise3{
           display: none;
           visibility: hidden;
