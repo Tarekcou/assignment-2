@@ -364,7 +364,7 @@ display: none;
   grid-template-areas: 
   "ex1   ex2 ex2 ex3"
   "ex4   ex4 ex5 ex6";
-  max-height: fit-content;
+  max-height: 500px;
 }
 .excercies-header h1{
   font-size: 2.4rem;
@@ -395,7 +395,6 @@ display: none;
 .excercise1 {
   grid-area: ex1;
   position: relative;
-
 }
 
 .excercise2 {
